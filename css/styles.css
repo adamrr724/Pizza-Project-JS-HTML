@@ -9,6 +9,7 @@
 
 .titles {
   color: #990000;
+  font-size: 20px;
 }
 
 img{
@@ -20,8 +21,9 @@ body {
   background-color: #d0d0d0;
 }
 
-.toppings-box {
+input.toppings-box {
 margin-bottom: 2em;
+padding-right: 8px;
 }
 
 .results {
@@ -37,11 +39,39 @@ h6 {
   margin-top: 3em;
 }
 
+#small {
+  color: green;
+  padding-right: 1em;
+}
+
+#medium {
+  color: orange;
+  padding-right: 1em;
+}
+
+#large {
+  color: red;
+}
+
 #total-price {
   font-size: 2em;
   color: red;
 }
 
+.key {
+    font-size: 18px;
+    text-shadow: 1px 1px 1px black;
+}
+
 h4 {
   color:#006600;
+}
+
+.size {
+  margin-top: 2em;
+}
+
+.toppings {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
