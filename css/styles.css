@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+.toppings-box {
+margin-bottom: 2em;
+}
+
+.results {
+  display: none;
+}
+
+h6 {
+  font-weight: bold;
+}
