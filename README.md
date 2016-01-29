@@ -1,25 +1,43 @@
-# addressBook
 
-##### Epicodus Section:  JavaScript OO - Address Book
+#### Pizza Pricing Website, 1/29/2016
 
-#### By Epicodus Lessons
+#### By Adam Ross Russell
 
 ## Description
 
-This application is a demonstration of constructors and prototypes using JavaScript to create a simple Address Book app.
+This website will price the pizza (or pizzas) of your choice, depending on the inputs you enter into the page.
 
-## Setup
+## Setup/Installation Requirements
 
-Install addressBook by cloning this repository.
+* Sign in to Github, search for adamrr724
+* Find repository PizzaProject
+* Fork and Zip/Clone repository
+* Open HTML file
+* Fill out order and submit
+
+## Known Bugs
+
+No known bugs.
+
+## Support and contact details
+
+Please contact adamrr724@yahoo.com with any technical difficulties.
 
 ## Technologies Used
 
-Application: JavaScript and jQuery
-Testing:  Mocha and Chai
+This webpage uses:
+
+HTML
+CSS
+Javascript
+JQuery
+Bootstrap
+Mocha
+Chai
 
 ### Legal
 
-Copyright (c) 2015 **Epicodus**
+Copyright (c) 2016 **Epicodus**
 
 This software is licensed under the MIT license.
 
