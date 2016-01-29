@@ -7,6 +7,10 @@
   font-family: 'Hind', sans-serif;
 }
 
+.titles {
+  color: #990000;
+}
+
 img{
   height: 1em;
 }
@@ -27,4 +31,17 @@ margin-bottom: 2em;
 h6 {
   font-weight: bold;
   margin-bottom: 10px;
+  color: blue;
+}
+.footer {
+  margin-top: 3em;
+}
+
+#total-price {
+  font-size: 2em;
+  color: red;
+}
+
+h4 {
+  color:#006600;
 }
