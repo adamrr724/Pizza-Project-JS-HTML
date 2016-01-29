@@ -5,6 +5,10 @@ function Pizza(size, toppings) {
   this.sizePizzaCost = this.sizePricingMethod();
 }
 
+function AllPizzas() {
+  this.allSelections = [];
+}
+
 Pizza.prototype.sizePricingMethod = function () {
 
   if (this.size === "Small") {
@@ -23,4 +27,44 @@ for (var i = 0; i < this.toppings.length; i++) {
 return this.sizePizzaCost;
 }
 
-var newPizza = new Pizza ("Medium", ["Pepperoni", "Green Peppers"]);
+AllPizzas.prototype.totalPrice = function () {
+  var total = 0
+  for (var i = 0; i < this.allSelections.length; i++) {
+    total += this.allSelections[i];
+  }
+return total;
+}
+
+// USER INTERFACE LOGIC
+
+$(document).ready(function() {
+
+  $("#add-extra-pizza").click(function() {
+    $("#new-pizzas").append('<div class="new-pizza">' +
+                    '<div class="form-group">' +
+                    '<label for="pizza-size">Choose the Size</label>' +
+                    '<input type="text" class="form-control" id="pizza-size">' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label for="toppings">Choose your Toppings</label>' +
+                    '<input type="text" class="form-control" id="toppings">' +
+                    '</div>');
+                  });
+
+$("form#pizza-order").submit(function(event) {
+  event.preventDefault();
+
+  var newAllPizzas = new AllPizzas();
+
+  $(".new-pizza").each(function() {
+    var size = $(this).find("input#pizza-size").val();
+    var toppings = $(this).find("input#toppings").val();
+    var newPizza = new Pizza(size, toppings);
+    debugger;
+
+    newAllPizzas.allSelections.push(newPizza.toppingsPricingMethod());
+    });
+
+    $("#total").append("The total price of this transaction comes to: $" + newAllPizzas.totalPrice());
+  });
+});

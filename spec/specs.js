@@ -14,3 +14,15 @@ describe('Pizza', function() {
   });
 
 });
+
+var testTotal = new AllPizzas();
+  testTotal.allSelections = [9, 12];
+
+describe('AllPizzas', function() {
+  it("takes all pizzas ordered, and creates a totaled order", function() {
+    expect(testTotal.allSelections).to.be.a('array')
+  });
+  it("totals the prices for each pizza", function() {
+    expect(testTotal.totalPrice()).to.equal(21);
+  });
+});

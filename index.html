@@ -9,10 +9,36 @@
     <title>Pizza</title>
   </head>
   <body>
+<!-- Jumbo -->
     <div class="jumbotron">
       <h1>Order Some Pizza</h1>
     </div>
+<!-- Body -->
+    <div>
+      <form id="pizza-order">
+        <div id="new-pizzas">
+          <div class="new-pizza">
+            <div class="form-group">
+              <label for="pizza-size">Choose the Size</label>
+              <input type="text" class="form-control" id="pizza-size">
+            </div>
+            <div class="form-group">
+              <label for="toppings">Choose your Toppings</label>
+              <input type="text" class="form-control" id="toppings">
+            </div>
+          </div>
+        </div>
+        <span class="btn btn-primary" id="add-extra-pizza">Add another pizza</span>
 
-
+        <button type="submit" class="btn">Get your total!</button>
+      </form>
+    </div>
+<!-- Results -->
+    <div class="results">
+      <h3>Pricing</h3>
+      <p>
+        <span id="total"></span>
+      </p>
+    </div>
   </body>
 </html>
