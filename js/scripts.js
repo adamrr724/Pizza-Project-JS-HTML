@@ -64,7 +64,7 @@ $("form#pizza-order").submit(function(event) {
 
     var toppingsView = $.makeArray(toppings);
 
-    $("#total").append("You have ordered 1 " + size.toLowerCase() + " pizza, with the following toppings: " + toppingsView.join(", ") + ".<br>");
+    $("#total").append("You have ordered 1 " + size.toLowerCase() + " pizza, with the following toppings: " + toppingsView.join(", ") + "<br>");
     var newPizza = new Pizza(size, toppings);
 
     newAllPizzas.allSelections.push(newPizza.toppingsPricingMethod());
