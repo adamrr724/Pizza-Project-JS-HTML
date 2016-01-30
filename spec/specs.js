@@ -4,6 +4,10 @@ describe('Pizza', function() {
     expect(testPizza.toppings).to.equal("pepperoni");
     expect(testPizza.size).to.equal("small");
   });
+  it("makes the minimum pizza price 8", function() {
+    var testPizza = new Pizza ();
+    expect(testPizza.minPizzaCost).to.equal(8);
+  });
   it("prices the pizza by size", function() {
     var testPizza = new Pizza ("Small");
     expect(testPizza.sizePricingMethod()).to.equal(8);
