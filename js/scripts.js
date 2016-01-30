@@ -51,9 +51,16 @@ $("form#pizza-order").submit(function(event) {
 
   $(".new-pizza").each(function() {
     var size = $(this).find(".size-box:checked").val();
+    debugger;
     var toppings = $(this).find(".toppings-box:checked").map(function() {
     return this.value;
     })
+
+    if (size === undefined) {
+      alert("Please enter a pizza size!");
+    } else if (toppings === undefined) {
+      var toppings = [];
+    } else
 
     var toppingsView = $.makeArray(toppings);
 
